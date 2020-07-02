@@ -1,9 +1,8 @@
 plugins {
 
-    kotlin("jvm") version PluginDefaultVersions.kotlin
-    id("io.spring.dependency-management") version PluginDefaultVersions.dependencyManagement
+    kotlin("jvm") version "1.3.61"
+    id("ru.tim.dependency-management") version "0.0.1"
 
-    id("ru.tim.dependency-management")
 }
 
 group = "com.extimample"
@@ -17,14 +16,3 @@ allprojects {
     }
 }
 
-subprojects {
-    apply(plugin = "org.gradle.java")
-    apply(plugin = "io.spring.dependency-management")
-
-    dependencyManagement {
-        imports {
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR5")
-        }
-    }
-
-}
