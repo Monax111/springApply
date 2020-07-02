@@ -2,9 +2,8 @@ plugins {
     kotlin("jvm")
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     id("org.springframework.boot") version "2.3.0.RELEASE"
-
-    id("jacoco")
     id("org.sonarqube") version "2.8"
+    id("jacoco")
 
 }
 
