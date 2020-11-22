@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mock
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: false
+    consul:
+      enabled: false
+    vault:
+      enabled: false

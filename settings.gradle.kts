@@ -1,11 +1,9 @@
 pluginManagement {
     repositories {
-        mavenLocal()
         gradlePluginPortal()
     }
 }
 
 
-rootProject.name = "demo"
+rootProject.name = "mock"
 
-include("subApplication")
