@@ -13,7 +13,7 @@ fun main() {
 
 class SomeLogicComponent {
 
-    fun score(people: People): Boolean = people.age >= 18
+    fun score(people: People): Boolean = people.age >= 21
 
 }
 
