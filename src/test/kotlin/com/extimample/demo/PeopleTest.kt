@@ -14,7 +14,7 @@ class PeopleTest {
     fun `несовершеннолетним отказываем`() {
         val people = People(
             name = "Подросток",
-            age = 17,
+            age = 20,
             city = "none"
         )
         val result = someLogicComponent.score(people)
@@ -25,7 +25,7 @@ class PeopleTest {
     fun `совершеннолетним одобряем`() {
         val people = People(
             name = "Студент",
-            age = 18,
+            age = 21,
             city = "Общага"
         )
         val result = someLogicComponent.score(people)
